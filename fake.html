@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FAKE LOCATION</title>
+<style>
+body{background:black;color:#00ff00;font-family:monospace;display:flex;justify-content:center;align-items:center;height:100vh}
+.win{border:1px solid #00ff00;width:320px}
+.title{background:#00ff00;color:black;text-align:center;padding:5px;font-weight:bold}
+.content{padding:15px;text-align:center}
+</style>
+</head>
+<body>
+<div class="win">
+<div class="title">FAKE LOCATION ACTIVATED</div>
+<div class="content" id="c"></div>
+</div>
+<script>
+function r(a,b){return (Math.random()*(b-a)+a).toFixed(4)}
+const cities=["Berlin","Tokyo","Moscow","Istanbul","New York"];
+c.innerHTML=
+"City: "+cities[Math.floor(Math.random()*cities.length)]+"<br>"+
+"Lat: "+r(-90,90)+"<br>"+
+"Lon: "+r(-180,180)+"<br><br>STATUS: ACTIVE";
+</script>
+</body>
+</html>
