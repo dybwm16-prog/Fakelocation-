@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ACCESS</title>
+<style>
+body{background:black;color:#00ff00;font-family:monospace;display:flex;justify-content:center;align-items:center;height:100vh}
+.box{border:1px solid #00ff00;padding:20px;width:260px;text-align:center}
+input,button{width:100%;margin:6px 0;padding:8px;background:black;color:#00ff00;border:1px solid #00ff00}
+button{background:#00ff00;color:black;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="box">
+<h3>SYSTEM ACCESS</h3>
+<input id="n" placeholder="NAME">
+<input id="p" type="password" placeholder="PASSWORD">
+<button onclick="go()">ENTER</button>
+</div>
+<script>
+function go(){
+ if(n.value=="dragon" && p.value=="05092009"){
+  location.href="fake.html";
+ }else{alert("ACCESS DENIED")}
+}
+</script>
+</body>
+</html>
